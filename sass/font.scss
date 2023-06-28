@@ -1,0 +1,7 @@
+//% Mini esercizio con interpolazione
+
+@mixin google-font($font) {
+    $font: unquote($font);
+    @import url(https://fonts.googleapi.com/css?family=#{$font});
+}
+

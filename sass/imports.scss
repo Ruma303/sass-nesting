@@ -1,5 +1,5 @@
-//% Importare CSS in SASS
-
+//$ Importare CSS in SASS
+/*
 @import url('https://example.com/external-styles.css');
 
 @import "https://example.com/external-styles.css";
@@ -7,13 +7,22 @@
 @import "external-styles.css";
 
 @import "style-screen.css" screen;
+ */
 
 
-
-//% Importare SASS in SASS
-
+//$ Importare SASS in SASS
+/*
 @import "variables";
 @import 'mixins';
 @import 'functions';
 @import 'base';
 @import 'components';
+ */
+
+
+//% Google Font
+
+@import "font";
+
+@include google-font("Roboto:400,700");
+@include google-font("Lato:400,700");

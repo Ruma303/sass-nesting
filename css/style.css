@@ -1,40 +1,58 @@
+/*
+@import url('https://example.com/external-styles.css');
+
+@import "https://example.com/external-styles.css";
+
+@import "external-styles.css";
+
+@import "style-screen.css" screen;
+ */
+/*
+@import "variables";
+@import 'mixins';
+@import 'functions';
+@import 'base';
+@import 'components';
+ */
+@import url(https://fonts.googleapi.com/css?family=Roboto:400,700);
+@import url(https://fonts.googleapi.com/css?family=Lato:400,700);
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.6;
 }
 body section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1em;
-  /* nav {
+  /* //* BEM */
+  /* .menu {
       text-align: center;
       margin-bottom: 1em;
 
-      a {
-      color: #333;
-      text-decoration: none;
-      padding: 0.5em 1em;
-      transition: color 0.3s;
+      &__item {
+          color: #333;
+          text-decoration: none;
+          padding: 0.5em 1em;
+          transition: color 0.3s;
 
-      &:hover,
-          &:focus {
-          color: #f60;
+          &--selected {
+              color: #f60;
           }
       }
   } */
-  /* //* BEM */
 }
-body section .menu {
+body section nav {
   text-align: center;
   margin-bottom: 1em;
 }
-body section .menu__item {
+body section nav a {
   color: #333;
   text-decoration: none;
   padding: 0.5em 1em;
   transition: color 0.3s;
+  font-family: "Lato";
 }
-body section .menu__item--selected {
+body section nav a:hover, body section nav a:focus {
   color: #f60;
 }
 body section .button-container {
@@ -60,6 +78,9 @@ body section .container {
   padding: 2em;
   border-radius: 5px;
 }
+body section .container > *:not(:last-child) {
+  margin-bottom: 1em;
+}
 body section .container-title {
   color: blue;
 }
@@ -71,9 +92,6 @@ body section .container .title {
 }
 body section .container .description {
   text-transform: uppercase;
-}
-body section .container > *:not(:last-child) {
-  margin-bottom: 1em;
 }
 body section:nth-of-type(2) label {
   font-size: 1.2em;
