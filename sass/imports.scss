@@ -1,0 +1,19 @@
+//% Importare CSS in SASS
+
+@import url('https://example.com/external-styles.css');
+
+@import "https://example.com/external-styles.css";
+
+@import "external-styles.css";
+
+@import "style-screen.css" screen;
+
+
+
+//% Importare SASS in SASS
+
+@import "variables";
+@import 'mixins';
+@import 'functions';
+@import 'base';
+@import 'components';

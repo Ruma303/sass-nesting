@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+body section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
+  /* nav {
+      text-align: center;
+      margin-bottom: 1em;
+
+      a {
+      color: #333;
+      text-decoration: none;
+      padding: 0.5em 1em;
+      transition: color 0.3s;
+
+      &:hover,
+          &:focus {
+          color: #f60;
+          }
+      }
+  } */
+  /* //* BEM */
+}
+body section .menu {
+  text-align: center;
+  margin-bottom: 1em;
+}
+body section .menu__item {
+  color: #333;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  transition: color 0.3s;
+}
+body section .menu__item--selected {
+  color: #f60;
+}
+body section .button-container {
+  text-align: center;
+}
+body section .button-container .button {
+  font-size: 1em;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+body section .button-container .button--primary {
+  background-color: #F60;
+  color: white;
+}
+body section .button-container .button--secondary {
+  background-color: #007BFF;
+  color: white;
+}
+body section .container {
+  background-color: #f5f5f5;
+  padding: 2em;
+  border-radius: 5px;
+}
+body section .container-title {
+  color: blue;
+}
+body section .container-description {
+  text-transform: capitalize;
+}
+body section .container .title {
+  color: red;
+}
+body section .container .description {
+  text-transform: uppercase;
+}
+body section .container > *:not(:last-child) {
+  margin-bottom: 1em;
+}
+body section:nth-of-type(2) label {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+body section:nth-of-type(2) input {
+  font-size: 1em;
+  padding: 0.5em;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+body section:nth-of-type(2) button {
+  font-size: 1em;
+  padding: 0.5em 1em;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+body section:nth-of-type(2) button:hover {
+  background-color: #0056b3;
+}
+
+/*# sourceMappingURL=style.css.map */
